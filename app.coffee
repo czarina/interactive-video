@@ -62,7 +62,7 @@ videoContainer = new Layer
 videoLayer = new VideoLayer
 	width: 640
 	height: 360
-	video: "images/morning.mp4"
+	video: "images/morning_small.mp4"
 	superLayer: videoContainer
 
 # center everything on screen
@@ -144,7 +144,7 @@ skipToChoiceButton.x = backButton.maxX
 forwardScene = new Layer
 	width: 640
 	height: 300
-	video: "images/morning.mp4"
+	#video: "images/morning.mp4"
 	superLayer: videoContainer
 	backgroundColor: ""
 
@@ -183,7 +183,9 @@ sceneChooseButtonChecker = (xCoord, yCoord) ->
 		currScene = history[history.length - 1]
 		nextScene = sceneLinks[currScene][0]
 		history.push(nextScene)
-		videoLayer.player.fastSeek(sceneStarts[nextScene])
+		videoLayer.player.currentTime = sceneStarts[nextScene]
+		videoLayer.player.play()
+		#videoLayer.player.fastSeek(sceneStarts[nextScene])
 
 	# logic for right button choice
 	else if xCoord >= chooseRightX[0] and xCoord <= chooseRightX[1] and yCoord >= chooseRightY[0] and yCoord <= chooseRightY[1]
@@ -191,7 +193,9 @@ sceneChooseButtonChecker = (xCoord, yCoord) ->
 		currScene = history[history.length - 1]
 		nextScene = sceneLinks[currScene][1]
 		history.push(nextScene)
-		videoLayer.player.fastSeek(sceneStarts[nextScene])
+		videoLayer.player.currentTime = sceneStarts[nextScene]
+		videoLayer.player.play()
+		#videoLayer.player.fastSeek(sceneStarts[nextScene])
 
 
 # Function to handle forward scene choice
@@ -200,7 +204,7 @@ forwardScene.on Events.Tap, (event) ->
 	print videoLayer.player.currentTime 
 	xCoord = event.point.x
 	yCoord = event.point.y
-	
+	print event.point
 	# if a click occurs while buttons are active during scene, check if a button was clicked
 	if true in [Math.round(videoLayer.player.currentTime) in  [Math.round(x)-11.. Math.round(x)] for x in sceneStarts][0]
 		sceneChooseButtonChecker(xCoord, yCoord)
@@ -227,7 +231,9 @@ backButton.on Events.Click, ->
 	history.pop()
 	if (history.length == 0)
 		history.push(0)
-	videoLayer.player.fastSeek(sceneStarts[history[history.length - 1]])
+	videoLayer.player.currentTime = sceneStarts[history[history.length - 1]]
+	videoLayer.player.play()
+	#videoLayer.player.fastSeek(sceneStarts[history[history.length - 1]])
 
 	# simple bounce effect on click
 	backButton.scale = 1.15
@@ -240,7 +246,7 @@ backButton.on Events.Click, ->
 # Function to handle choose button
 skipToChoiceButton.on Events.Click, ->
 	currScene = history[history.length - 1]
-	videoLayer.player.fastSeek(sceneStarts[currScene + 1] - 10)
+	videoLayer.player.currentTime = sceneStarts[currScene + 1] - 10
 
 	# simple bounce effect on click
 	skipToChoiceButton.scale = 1.15
@@ -333,4 +339,3 @@ scrubber.on Events.DragEnd, ->
 	videoLayer.player.currentTime = newTime
 	videoLayer.player.play()
 	playButton.image = "images/pause.png"
-
