@@ -56,6 +56,7 @@
 .git/objects/59/66e08f43728037b85c3bb3f302231456bdc469
 .git/objects/5a/26706f52b6b72b248ff01efed94432a3b052b5
 .git/objects/5a/bcbe34c26798cb0dd1ed3a7ade90872dc5067b
+.git/objects/5c/29bc8fa412faa4b2068f4707a8e0c96c6d12fe
 .git/objects/5c/e9116382e06d89828828e895200d1a956e8928
 .git/objects/5e/7b8d6ed41fbeb51fc4e5471dc553de3733a5f5
 .git/objects/60/9c599272eff9e4cf6cebc080326e8c0e1ca563
@@ -88,6 +89,7 @@
 .git/objects/93/258e26ea2fd13d54b908c1069bc3c60d0857df
 .git/objects/93/8e8e9f6b2fff85b4ddc58079527636d69787a4
 .git/objects/97/73ed4cb298f6883adcd1269de5c9f97fc6d8fe
+.git/objects/97/bdc8f4f53d5db370299d42cb6c7f0c9dd3d3cd
 .git/objects/9c/4f99b22a56fb8c71bac4b077baf261ac8a175e
 .git/objects/9c/cd8cce8d05be2ad8f4c63800f697a238266fd2
 .git/objects/9e/909f6fdcb4d98998a59fecaa54b8073401f805
@@ -95,6 +97,7 @@
 .git/objects/a3/ae7315264a6894cc3d0007169d1024124a7d26
 .git/objects/a3/cb1b2415bf060d25c87859cff1f1527937166f
 .git/objects/a5/196d1be8fb59edf8062bef36d3a602e0812139
+.git/objects/a5/a66547bbc22df3cb46776a404aa0a85e6951fd
 .git/objects/a5/ed54282b9a5322838cf44522f7cf9ff4e4241c
 .git/objects/a7/0705dbf951f09e31894e4f13f6576d89877420
 .git/objects/a7/5914107889b600677c6818666ed154f4940532
@@ -118,6 +121,7 @@
 .git/objects/d8/4758373da1d3121ec907435ae5d598c5c14b26
 .git/objects/df/bdffa45a9a826a7bf7253152b72ffc323d462a
 .git/objects/e3/f5c12dfdfbd364659357035624545f1a99a4ff
+.git/objects/e3/f9d0bfd81c8db6e7bcdb6394d34761f7f33c6f
 .git/objects/e4/40e5c842586965a7fb77deda2eca68612b1f53
 .git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391
 .git/objects/e6/b69cd983479bf8f480b5eace2d2c908436a40e
@@ -132,6 +136,7 @@
 .git/objects/f5/c12f559afe694acad81ae522d99d753827e743
 .git/objects/f7/46ff14bb1832b2d51ae7054be7680b23287b88
 .git/objects/f8/58a7257907ff5e8593660b490ce864d2cccfda
+.git/objects/f9/ae314d77b2c24613d6b22a2d8849bb0c911d04
 .git/objects/fa/41c0bab4310532229cd872687c3dce6a768b59
 .git/objects/fc/522cec6835a1674b0fa563f4876448fa8f2e20
 .git/objects/fe/4a4e19a59be4ab4542dd1ffbe0bce951fd9e37
@@ -142,27 +147,13 @@
 app.coffee
 config
 description
-framer/backups/backup-2016-09-17 12.37.57.coffee
-framer/backups/backup-2016-09-17 12.39.56.coffee
-framer/backups/backup-2016-09-17 12.40.56.coffee
-framer/backups/backup-2016-09-17 12.41.56.coffee
-framer/backups/backup-2016-09-17 12.44.56.coffee
-framer/backups/backup-2016-09-17 12.45.56.coffee
-framer/backups/backup-2016-09-17 12.46.56.coffee
-framer/backups/backup-2016-09-17 12.47.57.coffee
-framer/backups/backup-2016-09-17 12.48.57.coffee
-framer/backups/backup-2016-09-17 12.49.56.coffee
-framer/backups/backup-2016-09-17 12.55.56.coffee
-framer/backups/backup-2016-09-17 12.58.56.coffee
-framer/backups/backup-2016-09-17 13.04.56.coffee
-framer/backups/backup-2016-09-17 13.05.56.coffee
-framer/backups/backup-2016-09-17 13.10.56.coffee
-framer/backups/backup-2016-09-17 13.13.56.coffee
-framer/backups/backup-2016-09-17 13.14.56.coffee
-framer/backups/backup-2016-09-17 13.16.56.coffee
-framer/backups/backup-2016-09-17 13.17.56.coffee
-framer/backups/backup-2016-09-17 13.18.56.coffee
-framer/backups/backup-2016-09-17 13.21.56.coffee
+framer/backups/backup-2016-09-29 00.20.37.coffee
+framer/backups/backup-2016-09-29 09.32.24.coffee
+framer/backups/backup-2016-09-29 09.41.24.coffee
+framer/backups/backup-2016-09-29 09.42.24.coffee
+framer/backups/backup-2016-09-29 09.45.24.coffee
+framer/backups/backup-2016-09-29 13.24.45.coffee
+framer/backups/backup-2016-09-29 14.08.45.coffee
 framer/coffee-script.js
 framer/config.json
 framer/framer.generated.js
@@ -170,7 +161,6 @@ framer/framer.init.js
 framer/framer.js
 framer/framer.js.map
 framer/framer.modules.js
-framer/images/background.png
 framer/images/cursor-active.png
 framer/images/cursor-active@2x.png
 framer/images/cursor.png
@@ -180,16 +170,8 @@ framer/images/icon-152.png
 framer/images/icon-180.png
 framer/images/icon-192.png
 framer/images/icon-76.png
-framer/images/icon-arrow.png
-framer/images/icon-arrow@2x.png
-framer/images/icon-close.png
-framer/images/icon-close@2x.png
-framer/images/icon-framer.png
-framer/images/icon-framer@2x.png
-framer/images/icon-share.png
-framer/images/icon-share@2x.png
 framer/manifest.txt
-framer/mirror.css
+framer/metadata.json
 framer/preview.png
 framer/social-1200x630.png
 framer/social-880x460.png
@@ -206,12 +188,11 @@ hooks/pre-rebase.sample
 hooks/prepare-commit-msg.sample
 hooks/update.sample
 images/back.png
-images/choose.png
-images/dating_small.mp4
-images/morning_small.mp4
+images/forward.png
+images/home.png
+images/morning_edited.mp4
 images/pause.png
 images/play.png
-images/surfing.mp4
 images/volume_off.png
 images/volume_on.png
 index.html
